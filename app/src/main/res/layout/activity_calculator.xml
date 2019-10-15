@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.piyal.spycalculator.Calculator"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/text_id1"
+            android:textSize="20dp"
+            android:hint="Number_1"
+            android:background="@drawable/abc_menu_hardkey_panel_mtrl_mult"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:textSize="20dp"
+            android:hint="Number_2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/text_id2"
+            android:background="@drawable/abc_menu_hardkey_panel_mtrl_mult"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="DEL"
+            android:textColor="#e1100c"
+            android:background="@drawable/abc_popup_background_mtrl_mult"
+            android:id="@+id/delbt"
+            android:onClick="Buttonclick"/>
+
+        <Button
+            android:onClick="Buttonclick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="C"
+            android:textColor="#e1100c"
+            android:background="@drawable/abc_popup_background_mtrl_mult"
+            android:id="@+id/btclr" />
+        <Button
+            android:onClick="Buttonclick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="/"
+            android:textColor="#1404f2"
+            android:textStyle="bold"
+            android:background="@drawable/abc_popup_background_mtrl_mult"
+            android:id="@+id/btdiv" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/abc_popup_background_mtrl_mult">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="1"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt1"
+                 />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="2"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt2" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="3"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/bt3" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="x"
+                android:textColor="#1404f2"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/btdmul" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="4"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt4"
+                />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="5"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt5" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="6"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/bt6" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="-"
+                android:textColor="#1404f2"
+                android:textStyle="bold"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/btminus" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="7"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt7"
+                />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="8"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt8" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="9"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/bt9" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="+"
+                android:textColor="#1404f2"
+                android:textStyle="bold"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/btplus"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="0"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/zerobt" />
+
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="."
+                android:gravity="center"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/dotbt" />
+            <Button
+                android:onClick="Buttonclick"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="="
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#1f9b50"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:id="@+id/btequal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
